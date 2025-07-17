@@ -122,9 +122,19 @@ main > section{
     border-left: 5px solid #FF900E;
     padding-left: 50px;
 }
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -100px;
+}
+.feature-architect-image img{
+    width: 100%;
+}
 #experience-year{
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 /* some fact card related styles */
 .fact-container{
@@ -172,7 +182,7 @@ main > section{
 /* media query responsive */
 
 @media screen and (max-width: 576px){
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .features-container{
         flex-direction: column;
     }
     .team-img-container, .fact-container, .sponsor-companies{
@@ -188,11 +198,15 @@ main > section{
     .feature-details{
         max-width: 400px;
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 /* medium size mediascreen */
 @media screen and (min-width:576px) and (max-width:992px){
-    .teams{
+    .teams, .features-container{
         flex-direction: column;
     }
     .features{
@@ -205,5 +219,9 @@ main > section{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         justify-items: center;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 100px;
     }
 }
