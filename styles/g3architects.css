@@ -11,6 +11,7 @@
 /* shared styles */
 .display-flex{
     display: flex;
+    margin: 0 auto;
 }
 .text-primary{
     color: #FF900E;
@@ -51,6 +52,7 @@ main > section{
 /* nav related styles */
 .navbar{
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
 }
 .brand{
@@ -105,6 +107,7 @@ main > section{
 /* feature section style */
 .features-container{
     gap: 100px;
+    margin: 0 auto;
 }
 .feature-card{
     padding: 30px;
@@ -164,6 +167,7 @@ main > section{
 }
 .fact-description{
     max-width: 540px;
+    margin-bottom: 80px;
 }
 /* sponsor related styles */
 .sponsor-info{
@@ -173,10 +177,22 @@ main > section{
 }
 .sponsor-companies{
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(5, 1fr);
 }
 .sponsor-companies img{
     filter: grayscale(100%);
+}
+
+/* footer section */
+.footer-container{
+    max-width: 1340px;
+    background: rgba(255, 144, 14, 0.10);
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 /* media query responsive */
@@ -223,5 +239,9 @@ main > section{
     #experience-badge{
         margin-top: 20px;
         margin-left: 100px;
+    }
+    .fact-description{
+        text-align: center;
+        margin: 0 auto;padding-bottom: 50px;
     }
 }
